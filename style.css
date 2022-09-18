@@ -3,16 +3,21 @@
     margin: 0;
 }
 a{
-    text-decoration: none;
+    text-decoration: none!important;
+    color: inherit;
 }
 ul li{
     list-style: none;
 }
 nav{
     display: flex;
-    padding: 1em 0 1em 0;
+    padding: 1em 0 0 0;
     justify-content: space-between;
     position: static;
+}
+.h{
+    height: 6vh;
+    cursor: pointer;
 }
 .Nav_list ul {
     margin: auto;
@@ -22,21 +27,23 @@ nav{
     display: inline;
     margin-left: 1.8em;
     text-transform: capitalize;
-    padding: 1.2em;
+    padding-bottom: 1.1em;
 }
- .list::after{
+ /* .list::after{
     content: " ";
     border: 0.2em solid;
     border-color: black transparent transparent;
     width: 1.2em;
     height: 1.2em;
     position: absolute;
-}
+} */
 .logo-pic{
     margin-left: 1.8em;
+    height: 7vh;
 }
 .Nav_list{
     margin-right: 1.8em;
+    align-self: center;
 }
 .tell{
     height: 70vh;
@@ -149,4 +156,69 @@ footer p{
 }
 .done{
     padding: 2em 0 2em 0;
+}
+.list{
+    position: relative;
+    border-bottom: #fff;
+    transition: border-bottom 2px;
+    transform: 5s;
+    
+}
+.drop1{
+    display: none!important;
+    border-radius: 0.6em;
+    position: absolute;
+    width: 27vw;
+    background-color: #eff0f5;
+    font-size: 0.62em!important;
+    top: 109%;
+}
+.list:hover{
+    border-bottom: 5px solid orangered;
+}
+.list:hover .drop1{
+    display:flex!important;
+   }
+.drop2{
+    display: none!important;
+    border-radius: 0.6em;
+    position: absolute;
+    width: 27vw;
+    background-color: #eff0f5;
+    font-size: 0.62em!important;
+    top: 109%;
+    left: 30%;
+}
+.list:hover .drop2{
+    display: flex!important;
+}
+ .drop3{
+    display: none!important;
+    border-radius: 0.6em;
+    position: absolute;
+    padding: 1.5em;
+    background-color: #eff0f5;
+    font-size: 0.62em!important;
+    top: 109%;
+    left: 0;
+}
+.list:hover .drop3 {
+    display: flex!important;
+}
+.drop3 ul{
+    padding: 0!important;
+}
+.drop3 ul li{
+    margin: 0 auto;
+}
+.man{
+    position: relative;
+    flex: 1;
+    left: -16px;
+    right: 51px;
+}
+.man li {
+    flex: 1;
+    padding: 1.5em;
+    font-size: 1.2em;
 }
